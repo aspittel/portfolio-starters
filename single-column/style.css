@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;800&family=Playfair+Display:wght@600&display=swap");
+
+body {
+  font-weight: 400;
+  color: #222;
+  font-family: Lato, sans-serif;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+}
+
+header h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 0.7;
+}
+
+p {
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+}
+
+hr {
+  margin-top: 30px;
+  border-width: 0;
+  border-top: 2px solid #222;
+  width: 80px;
+}
+
+section {
+  margin: 30px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  margin-left: 0em;
+}
+
+main {
+  max-width: 800px;
+  margin: 60px auto;
+}
+
+a {
+  color: #222;
+}
+
+.speaking-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.speaking a {
+  color: #444;
+  display: block;
+  line-height: 1.5;
+}
+
+.speaking p {
+  line-height: 1;
+  font-size: 0.9em;
+}
+
+.writing a {
+  display: block;
+  text-decoration: underline;
+  margin-top: 6px;
+}
+
+.social-links a {
+  font-size: 25px;
+  padding: 0px 8px;
+  text-decoration: none;
+  color: #444;
+}
+
+.social-footer {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+::selection {
+  background: lavender;
+}
+
+.more-link {
+  color: #ab47bc;
+}
+
+@media only screen and (max-width: 450px) {
+  section {
+    margin: 10px;
+  }
+  .speaking-columns {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .speaking-columns {
+    display: block;
+  }
+}
